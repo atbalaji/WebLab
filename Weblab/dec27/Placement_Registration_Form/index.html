@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style tye="text/css" >
+button{
+width:100px;
+font-style:bold;
+}
+.a{
+margin-right:100px;
+} 
+.d1{
+background-color:#CC6666;
+}
+.d2{
+background-color:#33CCCC;
+}
+.d3{
+background-color:#66FF33;
+}
+</style>
+<title> Placement Registration Form</title>
+</head>
+<body bgcolor="gray">
+<center><h2> <font type="Times New Roman"><b>Placement Registration Form</b></h2><hr /><br /><br /><center> 
+<div  	id="reg_form" align="middle">
+<div class="d1"  id=" personal" align="left"><h4>Personal Details</h4><hr />
+<form action>
+<label class="a"> <b>First Name</b> </label><input type="text" id="fName" required /><br /><br />
+<label style="margin-right:103px;" class="a"> <b>Last Name</b> </label><input type="text" id="lName" required /><br /><br />
+<label style="margin-right:130px;" class="a"> <b>RollNo</b>    </label><input type="number" id="roll" required/><br /><br />
+<label class="a"> <b>Mobile No.</b> </label><input type="number" id="mobile" pattern="[7-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"  required/><br /><br />
+<label style="margin-right:110px;" class="a"> <b>E-mail Id</b> </label><input type="text" id="email" required  /><br /><br />
+</div>
+<div class="d2" align="left"><h4>Educational Details</h4><hr />
+
+<label class="a" style="margin-right:133px;"> <b>Degree </b> </label><input type="text" id="dName" required /><br /><br />
+<label style="margin-right:142px;" class="a"> <b>YOC</b> </label><input type="number" id="yoc" required/><br /><br />
+<label class="a" style="margin-right:135px;"> <b>CGPA</b> </label><input type="number" id="cgpa" required /><br /><br />
+
+</div>
+<div class="d3" align="left"><h4>Company Details</h4><hr />
+
+<label style="margin-right:120px;" class="a"> <b>Company </b> </label><input type="text" id="cName"  required/><br /><br />
+<label style="margin-right:103px;" class="a"> <b>Job Position</b> </label><input type="text" id="jobPosition"  required/><br /><br />
+
+</div>
+<br /><button align="middle"  onclick="check()" type="submit" value="submit" ><b> Submit </b></button>
+</form>
+</div>
+<script>
+function check(){
+var r=document.getElementById("roll").value;
+if(!(r>=2015103001 && r<=2015103699))
+alert("Wrong Roll Number");
+var f=document.getElementById("mobile").value;
+if(!(f>=7000000000 && f<=9999999999))
+alert("Wrong Phone Number");
+var cg=document.getElementById("cgpa").value;
+if(!(cg<=10.0 && cg>=0.0))
+alert("Enter Valid CGPA");
+}
+</script>
+</body>
+</html>

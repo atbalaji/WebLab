@@ -1,0 +1,46 @@
+car_catalog 
+     { display: block
+	background-color:blue;	}
+car
+     { display: block;
+	 background-color: light blue;
+       font-family: arial;
+       color: #008000; 
+       font-weight: 600; 
+       font-size: 22;
+       margin-top: 12pt;
+       text-align: center }
+
+     { display: block }
+engine 
+     { display: block;
+       font-family: arial;
+       color: #000080; 
+       font-weight: 400; 
+       margin-left: 15pt;
+       margin-top: 12pt;
+       font-size: 18 }
+accessories
+     { display: block;
+       font-family: arial;
+       color: #600060; 
+       font-weight: 400; 
+       margin-left: 45pt;
+       margin-top: 5pt;
+       font-size: 18 }
+fuel_system
+     { display: block;
+       font-family: arial;
+       color: #006000; 
+       font-weight: 400; 
+       margin-left: 45pt;
+       margin-top: 5pt;
+       font-size: 18 }
+transmission_type
+     { display: block;
+       font-family: arial;
+       color: #800000; 
+       font-weight: 400; 
+       margin-left: 45pt;
+       margin-top: 5pt;
+       font-size: 18 }

@@ -1,0 +1,64 @@
+<?xml version = "1.0"  encoding = "utf-8"?>
+<!DOCTYPE patient_list SYSTEM "patient.dtd">
+<?xml-stylesheet type="text/xsl" href="patient_display1.xsl"?>
+
+  <patient_list>
+  <!-- Comment: This is a list of student -->
+    <patient>
+		<ssno>1</ssno>
+		<age>34</age>
+		<roomno>12</roomno>
+		<phoneno>9999999999</phoneno>
+		<address>35,xyz street, chennai</address>
+		<diseases >
+			<dname stage="1">Diabetes</dname>
+			<dname stage="2">Fever</dname>
+		</diseases>
+		<allergies count="2">smoke,smog</allergies>
+    </patient>
+    <patient>
+		<ssno>2</ssno>
+		<age>22</age>
+		<roomno>42</roomno>
+		<phoneno>234234</phoneno>
+		<address>34,sf street,tan</address>
+		<diseases>
+			<dname stage="2">Diabetes</dname>
+				</diseases>
+		<allergies count="1">dust</allergies>
+    </patient>
+	<patient>
+		<ssno>3</ssno>
+		<age>44</age>
+		<roomno>22</roomno>
+		<phoneno>2434236</phoneno>
+		<address>22,sdfsd street, kdu</address>
+		<diseases>
+			<dname stage="3">cold</dname>
+		</diseases>
+		<allergies count="1">smoke</allergies>
+    </patient>
+	<patient>
+		<ssno>4</ssno>
+		<age>55</age>
+		<roomno>12</roomno>
+		<phoneno>65656554</phoneno>
+		<address>22,xlj street,cmu</address>
+		<diseases>
+					<dname stage="1">Fever</dname>
+				</diseases>
+		<allergies count="0">No allergies</allergies>
+    </patient>
+	<patient>
+		<ssno>5 </ssno>
+		<age>77</age>
+		<roomno>55</roomno>
+		<phoneno>89898989</phoneno>
+		<address>11,sdfs sde, dsf</address>
+		<diseases>
+			<dname stage="2">Asthma</dname>
+		
+		</diseases>
+		<allergies count="1">Dust</allergies>
+    </patient>
+	</patient_list>

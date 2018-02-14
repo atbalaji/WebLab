@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE patients>
+
+  <!ELEMENT patient_list (patient+)>
+  <!ELEMENT patient (ssno,age,roomno,phoneno,address,diseases,allergies)>
+  <!ELEMENT ssno (#PCDATA)>
+  <!ELEMENT age (#PCDATA)>
+  <!ELEMENT roomno (#PCDATA)>
+  <!ELEMENT phoneno (#PCDATA)>
+  <!ELEMENT address (#PCDATA)>
+  <!ELEMENT diseases (#PCDATA)>
+  <!ELEMENT allergies (#PCDATA)>
+  <!ATTLIST diseases stage CDATA #REQUIRED>
+  <!ATTLIST allergies count CDATA #REQUIRED>
+  
+  

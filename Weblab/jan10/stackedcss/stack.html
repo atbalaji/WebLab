@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Stacked Images</title>
+<script type="text/javascript">
+var img1=document.getElementById('i1');
+var img2=document.getElementById('i2');
+var img3=document.getElementById('i3');
+
+function switch(id2){
+var top='i3';
+var ztop=document.getElementById(top).style;
+var ntop=document.getElementById(id2).style;
+ntop.z-index=10;
+ztop.z-index=0;
+top=id;	
+var des=document.getElementById(id2).alt;
+var tex='<b>';
+tex+=des;
+tex+='</b>';
+document.getElementById('des').innerHTML=tex;
+}
+</script>
+<style type="text/css">
+.im1 {
+position:absolute;  
+z-index:0; 
+top:100px; 
+}
+.im2 {
+position:absolute;  
+z-index:0;  
+left:25px;  
+top:125px;  
+}
+.im3 {
+position:absolute;  
+z-index:0;  
+left:50px;  
+top:175px;  
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<img class="im1" id="i1" src="img1.jpg" alt=" Nice Red Flower "  onClick="switch('i1')"/>
+<img class="im2" src="img2.jpg" id="i2" alt=" Nice Purple Flower " onClick="switch('i2')"/>
+<img class="im3" src="img3.jpg" id="i3" alt=" Nice Yellow Flower " onClick="switch('i3')"/>
+</div>
+<div class="Description">
+<p style="border-style:solid; position:absolute; " id="des"></p>
+</div>
+
+</body>
+</html>
