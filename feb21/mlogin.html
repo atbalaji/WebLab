@@ -1,0 +1,92 @@
+
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head ><style>div { border: 2px; background-color:#EECf30;}</style>
+        <title>LOGIN PAGE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		</link>
+	</head>
+	<body>
+	<center>
+	<div class="container">
+		<div class="row">
+			<form  method="post" action="mlogin.php" onsubmit="return checkform(this);">
+				<h1><center>ADMINISTRATOR LOGIN </center></h1>
+                    <div class="form-control">
+                        <p>Enter the user name : 
+                            <input type="text" placeholder="username" name="username" id="user" >
+                            </input></p>
+                        <p>Enter the password : 
+                            <input type="password" placeholder="password" name="password" id="pass" >
+                            </input></p>
+					</div>
+<br>
+<div class="capbox">
+
+<div id="CaptchaDiv"></div>
+
+<div class="capbox-inner">
+Type the above captcha:<br>
+
+<input type="hidden" id="txtCaptcha">
+<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+
+</div>
+</div>
+<br><br>
+<script type="text/javascript">
+
+
+function checkform(theform){
+var why = "";
+
+if(theform.CaptchaInput.value == ""){
+why += "- Please Enter CAPTCHA Code.\n";
+}
+if(theform.CaptchaInput.value != ""){
+if(ValidCaptcha(theform.CaptchaInput.value) == false){
+why += "- The CAPTCHA Code Does Not Match.\n";
+}
+}
+if(why != ""){
+alert(why);
+return false;
+}
+}
+
+var a = Math.ceil(Math.random() * 9)+ '';
+var b = Math.ceil(Math.random() * 9)+ '';
+var c = Math.ceil(Math.random() * 9)+ '';
+var d = Math.ceil(Math.random() * 9)+ '';
+var e = Math.ceil(Math.random() * 9)+ '';
+
+var code = a + b + c + d + e;
+document.getElementById("txtCaptcha").value = code;
+document.getElementById("CaptchaDiv").innerHTML = code;
+
+function ValidCaptcha(){
+var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+if (str1 == str2){
+return true;
+}else{
+return false;
+}
+}
+
+
+function removeSpaces(string){
+return string.split(' ').join('');
+}
+</script>
+			<center><input type="submit" id="button"  value="submit" /></center>
+
+			</form>
+		</div>
+	</div>
+	</center>
+	</body>
+	</html>
+	

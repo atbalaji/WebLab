@@ -1,0 +1,114 @@
+<html>
+ 
+<head>
+ 
+    <title>Registration Form</title>
+ 
+    <script type="text/javascript">
+        function validate_form() {
+            if (document.emp.ename.value == "") {
+                alert("Please fill in the 'Your Employee Name' box.");
+                return false;
+            }
+            if (document.emp.eid.value == "") {
+                alert("Enter Employee Number");
+                return false;
+            }
+            alert("sucessfully Submitted");
+ 
+ 
+ 
+            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(document.emp.email.value)) {
+                alert("You have entered an invalid email address!")
+                return (false)
+            }
+        }
+ 
+ 
+        //-->
+    </script>
+ 
+</head>
+ 
+<body bgcolor="#FFFFFF">
+    <form name="emp" action="reg.php" onsubmit="return validate_form();" method="post">
+        <table align="center" width=40% width="100%" cellspacing="2" cellpadding="2" border="5">
+            <tr>
+                <td colspan="2" align="center"><b>Employee Registration Form.</b></td>
+ 
+            </tr>
+            <tr>
+                <td align="left" valign="top" width="41%">Employee Name<span style="color:red">*</span></td>
+ 
+                <td width="57%"><input type="text" value="" name="ename" size="24"></td>
+            </tr>
+            <tr>
+                <td align="left" valign="top" width="41%">Employee Number<span style="color:red">*</span></td>
+                <td width="57%">
+                    <input type="text" value="" name="eid"  size="24"></td>
+            </tr>
+			<tr>
+                <td align="left" valign="top" width="41%">Age</td>
+ 
+                <td width="57%"><input type="number" value="" name="age" size="24"></td>
+            </tr>
+			<tr>
+                <td align="left" valign="top" width="41%">salary</td>
+ 
+                <td width="57%"><input type="number" value="" name="salary" size="24"></td>
+            </tr>
+        <tr>
+ 
+            <td align="left" valign="top" width="41%">Contact Number</td>
+            <td width="57%">
+                <input type="number" maxlength="10" name="phone" size="24"></td>
+            </tr>
+            <tr>
+                <td align="left" valign="top" width="41%">Location</td>
+                <td width="57%"><select name="location">
+<option value="Default">Default</option>
+<option value="Chennai">Chennai</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Chennai">Pune</option>
+<option value="Bangalore">Mysore</option>
+<option value="Chennai">Chandigarh</option>
+ 
+</select></td>
+ 
+ 
+            </tr>
+ 
+            <tr>
+                <td align="left" valign="top" width="41%">Designation</td>
+                <td width="57%">
+                    <select name="position">
+<option value="Default">Default</option>
+<option value="Systems Engineer">Systems Engineer</option>
+<option value="Senior Systems Engineer">Senior Systems Engineer</option>
+<option value="Technology Analyst">Technology Analyst</option>
+<option value="Technology Lead">Technology Lead</option>
+<option value="Project Manager">Project Manager</option>
+ 
+ 
+</select></td>
+ 
+ 
+            </tr>
+            <tr>
+                <td align="left" valign="top" width="41%">Email<span style="color:red">*</span></td>
+                <td width="57%">
+                    <input type="text" value="" name="email" size="24"></td>
+            </tr>
+ 
+            <tr>
+                <td colspan="2">
+                    <p align="center">
+                        <input type="submit" value="  Submit" name="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="  Reset All   " name="B5"></td>
+            </tr>
+ 
+        </table>
+    </form>
+</body>
+ 
+</html>
