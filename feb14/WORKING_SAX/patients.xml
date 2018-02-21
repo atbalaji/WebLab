@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="patient.xsl"?>
+<hospital>
+ <!-- Comment: This is a list of patients -->
+<patient1 uninum="787">
+
+       <name>
+          
+             Name
+        </name>
+       <ssn>
+          SSN
+       </ssn>
+       <age>Age</age>
+       <roomnumber>
+          Room No.
+       </roomnumber>
+       <phn>
+	   Phone Number
+	   </phn>
+	   <address>
+	   Address
+	   </address>
+       
+       <medicalproblem>
+            Medical Problems    
+       </medicalproblem>
+	   <drugallergies>
+	   Drug Allergies
+	   </drugallergies>
+       </patient1>
+    <patient uninum="907">
+       <name>
+          
+             Ranjan
+        </name>
+       <ssn>
+          S8965 
+       </ssn>
+       
+       <age>54</age>
+       <roomnumber>
+          R100
+       </roomnumber>
+       <phn>
+	   9940870717
+	   </phn>
+	   <address>
+	   25,adyar,Chennai
+	   </address>
+       
+       <medicalproblem>
+            Fever, Headache    
+       </medicalproblem>
+	   <drugallergies>
+          gastritis
+      </drugallergies>
+
+       </patient>
+    <patient uninum="443">
+      <name>
+             Arun
+			 </name>
+      <ssn>
+        S8547
+      </ssn>
+      
+       <age>64</age>
+      <roomnumber>
+        563
+      </roomnumber>
+      <phn>
+	  9568745123
+	  </phn>
+         <address>
+           67,Anna Nagar,Chennai.
+         </address>
+         <medicalproblem>
+		 Heart Attack
+		 </medicalproblem>
+		 <drugallergies>
+          gastritis
+      </drugallergies>
+
+   </patient>
+   <patient uninum="213">
+      <name>
+	  Akash
+      </name>
+      <ssn>
+          S4587
+      </ssn>
+	  
+       <age>34</age>
+      <roomnumber>
+        458
+      </roomnumber>
+	  <phn>
+	  9685741236
+	  </phn>
+         <address>
+           67, Central Park, Chennai
+         </address>
+      
+      <medicalproblem>
+          Back Pain    
+      </medicalproblem>
+      <drugallergies>
+          gastritis
+      </drugallergies>
+   </patient>
+   <patient uninum="2313">
+      <name>
+          Alok
+		  </name>
+      <ssn>
+          S4521
+      </ssn>
+	  
+       <age>40</age>
+      <roomnumber>
+        452
+      </roomnumber>
+	  <phn>
+	  9658452156
+	  </phn>
+         <address>
+             78,Madipakkam, Chennai
+         </address>
+		 <medicalproblem>
+		 Cancer
+      </medicalproblem>
+      <drugallergies>
+             gastritis
+      </drugallergies>
+   </patient>
+   <patient uninum="187">
+      <name>
+          Aswin
+		  </name>
+      <ssn>
+          S2563
+      </ssn>
+	  
+       <age>20</age>
+      <roomnumber>
+        458
+      </roomnumber>
+	  <phn>
+	  9658741452
+	  </phn>
+         <address>
+             45,Chrompet, Chennai.
+         </address>
+		 <medicalproblem>
+		 Tuberculosis
+      </medicalproblem>
+      <drugallergies>
+             gastritis
+      </drugallergies>
+   </patient>
+</hospital>

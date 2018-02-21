@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Fixed SYSTEM "Fixed.dtd" [
+<!ENTITY bankname "Pittsburgh National Corporation">
+]
+>
+   <Fixed>
+       <Bank>&bankname;</Bank>
+       <Notional currency = "pounds">100</Notional>
+       <Fixed_Rate>5</Fixed_Rate>
+       <NumYears>3</NumYears>
+       <NumPayments>6</NumPayments>      
+   </Fixed>
+

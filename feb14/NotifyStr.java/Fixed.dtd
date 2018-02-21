@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT Fixed ( Bank, Notional, Fixed_Rate, NumYears, 
+                                                    NumPayments ) >
+<!ELEMENT Bank (#PCDATA)>
+<!ELEMENT Notional (#PCDATA)>
+<!ATTLIST Notional currency (dollars | pounds) #REQUIRED>
+<!ELEMENT Fixed_Rate (#PCDATA) >
+<!ELEMENT NumYears (#PCDATA) >
+<!ELEMENT NumPayments (#PCDATA) >
